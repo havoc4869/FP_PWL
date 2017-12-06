@@ -9,8 +9,52 @@
 </head>
 <body class="bgUtama">
 
+	<div>
+    <ul class="top">
+        <li><a href="#">
+            <img src="img/logo/Logo.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
+        </a></li>
+        <li style="float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+        <li style="float: right;"><a href="#">Sign Up</a></li>        
+    </ul>
+    </div>
 	
-	<div id="slider"  class="container_Utama" style="height: 300px; margin: 5% 5% 0;">
+	<div id="slider"  class="container_Utama" style="height: 350px;">
 	<figure>
 	<img src="">
 	<img src="img/Slider/slider1.jpg" alt>
@@ -22,27 +66,18 @@
 	</figure>
 	</div>
 
-
-	<div>
-	<ul class="topnav">
-		<li><a href="index.php">Beranda</a></li>
- 		<li class="menu-mudun"><a href="#">Produk
-		<i class="fa fa-caret-down"></i></a>
-			<ul class="mudun">
-				<li><a href="udang.php">Udang</a></li>
-				<li><a href="nila.php">Ikan Nila</a></li>
-				<li><a href="kakap.php">Ikan Kakap</a></li>
-				<li><a href="bandeng.php">Ikan Bandeng</a></li>
-			</ul>
-		</li> 
-  		<li><a href="#">Order</a></li>
-  		<li><a href="tentang.php">Tentang Kami</a></li>
-  		<li><a href="#">Hubungi Kami</a></li>
-		<li class="icon">
+    <div>
+    <ul class="topnav">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#c">Order</a></li>
+        <li><a href="tentang.php">Tentang Kami</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+        <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">☰</a>
-  </li></a>
-	</ul>
-	</div>
+  </li>
+    </ul>
+    </div>
 
 	<div class="container_Utama">
 		<div class="col-sm-9" style="background-color: #CEEAFF;">

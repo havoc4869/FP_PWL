@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PT Arona Wijaya Sakti</title>
+	<title>PT Aruna Wijaya Sakti</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
 	<link href="css/bootstrap.css" rel="stylesheet">
@@ -12,7 +12,9 @@
 
     <div>
     <ul class="top">
-        <li><a href="#">LOGO</a></li>
+        <li><a href="#">
+            <img src="img/logo/Logo.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
+        </a></li>
         <li style="float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
             <div id="id01" class="modal">
                 <form class="modal-content animate" action="/action_page.php">
