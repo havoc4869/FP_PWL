@@ -68,7 +68,7 @@
         <li><a href="#">Beranda</a></li>
         <li><a href="#">Produk</a></li>
         <li><a href="#c">Order</a></li>
-        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="tentang.php">Tentang Kami</a></li>
         <li><a href="#">Hubungi Kami</a></li>
         <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">☰</a>
