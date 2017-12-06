@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PT Arona Wijaya Sakti</title>
+	<title>PT Aruna Wijaya Sakti</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
 	<link href="css/bootstrap.css" rel="stylesheet">
