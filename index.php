@@ -68,7 +68,14 @@
     <div>
     <ul class="topnav">
         <li><a href="#">Beranda</a></li>
-        <li><a href="#">Produk</a></li>
+        <li><a href="#">Produk</a>
+			<ul>
+				<li><a href="udang.php">Udang</a></li>
+				<li><a href="nila.php">Ikan Nila</a></li>
+				<li><a href="kakap.php">Ikan Kakap</a></li>
+				<li><a href="bandeng.php">Ikan Bandeng</a></li>
+			</ul>
+		</li>
         <li><a href="#c">Order</a></li>
         <li><a href="tentang.php">Tentang Kami</a></li>
         <li><a href="#">Hubungi Kami</a></li>
