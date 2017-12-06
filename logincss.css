@@ -1,5 +1,5 @@
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=Email], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -43,7 +43,7 @@ img.avatar {
 }
 
 .isi {
-    padding: 16px;
+    padding: 15px;
 }
 
 span.psw {
@@ -69,23 +69,23 @@ span.psw {
 /* Modal Content/Box */
 .modal-conten {
     background-color: #fefefe;
-    margin: 5% auto 25% auto ; /* 5% from the top, 15% from the bottom and centered */
+    margin: 0% 32% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 35%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
-.close {
+.close1 {
     position: absolute;
-    right: 25px;
-    top: 0;
+    right: 3%;
+    top: -20%;
     color: #000;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close1:focus {
     color: red;
     cursor: pointer;
 }

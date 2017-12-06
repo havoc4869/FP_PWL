@@ -1,0 +1,22 @@
+.daftar{
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+input[type=text],input[type=password] , input[type=Email],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button{
+
+	padding: 10px 20px;
+	margin-top: 30px;
+	margin-left: 45%;
+	margin-right: 45%;
+}

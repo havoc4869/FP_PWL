@@ -15,13 +15,13 @@
             <div id="id01" class="modal">
                 <form class="modal-conten animate" action="/action_page.php">
                     <div class="imgcontainer">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
                         <img src="D:\kampus\Semester 5\Pemrograman Web Lanjut\FP_PWL\img\logo\logo.png" alt="Avatar" class="avatar">
                     </div>
 
                     <div class="isi">
-                        <label><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label><b>Email</b></label>
+                        <input type="Email" placeholder="Enter Email" name="email" required>
                         <label><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
                         <button class="button1" type="submit">Login</button>
