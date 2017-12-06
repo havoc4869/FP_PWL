@@ -9,7 +9,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.button1 {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -19,7 +19,7 @@ button {
     width: 100%;
 }
 
-button:hover {
+.button1:hover {
     opacity: 0.8;
 }
 
@@ -39,10 +39,10 @@ button:hover {
 
 img.avatar {
     width: 40%;
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
-.container {
+.isi {
     padding: 16px;
 }
 
@@ -67,11 +67,11 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-conten {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 25% auto ; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
