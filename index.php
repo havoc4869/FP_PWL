@@ -7,6 +7,11 @@
 	<link href="css/bootshape.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
+
+<?php
+    require_once ("koneksi.php");
+?>
+
 </head>
 <body>
     <?php
@@ -24,12 +29,17 @@
             <br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br>    aaaaaaaaaaaaaa
-            <!-- Editnya di sini ya maaaas!!! Di antara div ini-->
-		</div>
+            
+        <?php
+            include 'TampilKomentar.php';
+        ?>
+
+        </div>
 
 		<?php
             include 'BagianKanan.php';
         ?>
+        </div>
 	</div>
 	   <?php
             include 'Footer.php';
