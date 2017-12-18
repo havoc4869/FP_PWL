@@ -7,7 +7,6 @@
 	<link href="css/bootshape.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
-	<link rel="stylesheet" type="text/css" href="dropdowncss.css">
 </head>
 <body>
     <?php
@@ -18,27 +17,25 @@
 
 	<div class="container_Utama">
 		<div class="col-sm-9" style="background-color: #CEEAFF;">
-<p><img src="img/nila.jpg" height="60%" width="60%" style="float:center;margin:8px 4px 4px 8px;"></p>
+		<div style="margin:0 30px 0 30px">
+<p><img src="img/nila.jpg" alt height="60%" width="60%" style="float:center;margin:8px 4px 4px 8px;
+border-radius: 10px;"></p>
 <h2>Klasifikasi dan Morfologi Ikan Nila</h2>
 <ol style="margin:4px 0 0 15px">
 	<li>Klasifikasi</li>
-	<table border="10px" style="margin: 5px 0 10px 0;">
-	<tr>
-		<td>
-			<p>Kingdom : Animalia</p>
-			<p>Filum : Chordata</p>
-			<p>Subfilum : Vertebrata</p>
-			<p>kelas : Osteichyes</p>
-			<p>Subkelas : Acanthopterygii</p>
-			</td><td></td><td></td><td>
-			<p>Ordo : Percomorphi</p>
-			<p>Subordo : Percoidae</p>
-			<p>Family : Cichlidae</p>
-			<p>Genus : Oreochromis</p>
-			<p>Spesies : Oreochromis nilaticus</p>
-		</td>
-	</tr>
-		</table>
+		<ul style="margin:5px 0 5px 20px;">
+			<li>Kingdom : Animalia</li>
+			<li>Filum : Chordata</li>
+			<li>Subfilum : Vertebrata</li>
+			<li>kelas : Osteichyes</li>
+			<li>Subkelas : Acanthopterygii</li>
+			<li>Subordo : Percoidae</li>
+			<li>Ordo : Percomorphi</li>
+			<li>Subordo : Dendrobrachiata</li>
+			<li>Family : Cichlidae</li>
+			<li>Genus : Oreochromis</li>
+			<li>Spesies : Oreochromis nilaticus</li>
+		</ul>
 	<li>Morfologi</li>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Ikan nila dapat di morfologikan berdasarkan  bentuk fisiologis yaitu memiliki bentuk tubuh bulat pipih, pungung agak tinggi, badan, sirip ekor dan sirip punggung terdapat garis lurus memanjang. Ikan ini memiliki lima buah sirip yaitu sirip punggung, sirip data, sirip perut, sirip anal dan sirip ekor.  Dengan adanya sirip tersebut sangat membantu pergerakan ikan nila semakin cepat di perairan air tawar.</p>
 	
@@ -58,6 +55,10 @@
 		
 </ol>
 <a href="order.php" target="_blank" class="pesansekarang">ORDER</a>
+		</div>
+		<?php
+            include 'TampilKomentar.php';
+        ?>
 		</div>
 
 		<?php

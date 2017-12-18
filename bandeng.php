@@ -7,7 +7,6 @@
 	<link href="css/bootshape.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
-	<link rel="stylesheet" type="text/css" href="dropdowncss.css">
 </head>
 <body>
     <?php
@@ -18,23 +17,22 @@
 
 	<div class="container_Utama">
 		<div class="col-sm-9" style="background-color: #CEEAFF;">
-<p><img src="img/bandeng.jpg" height="60%" width="60%" style="float:center;margin:8px 4px 4px 8px;"></p>
+		<div style="margin:0 30px 0 30px">
+<p><img src="img/bandeng.jpg" height="60%" width="60%" style="float:center;margin:8px 4px 4px 8px;
+border-radius: 10px;"></p>
 <h2>Klasifikasi dan Morfologi Ikan Bandeng</h2>
 <ol style="margin:4px 0 0 15px">
 	<li>Klasifikasi</li>
-	<table border="10px" style="margin: 5px 0 10px 0;">
-	<tr><td>
-		<p>Kingdom : Animalia</p>
-		<p>Filum : Chordata</p>
-		<p>Subfilum : Vertebrata</p>
-		<p>Kelas : Osteichthyes</p>
-		</td><td></td><td></td><td>
-		<p>Ordo : Gonorynchiformes</p>
-		<p>Famili : Chanidae</p>
-		<p>Genus : Chanos</p>
-		<p>Spesies : Chanos chanos</p></td>
-	</tr>
-		</table>
+		<ul style="margin:5px 0 5px 20px;">
+			<li>Kingdom : Animalia</li>
+			<li>Filum : Chordata</li>
+			<li>Subfilum : Vertebrata</li>
+			<li>Kelas : Osteichthyes</li>
+			<li>Ordo : Gonorynchiformes</li>
+			<li>Famili : Chanidae</li>
+			<li>Genus : Chanos</li>
+			<li>Spesies : Chanos chanos</li>
+		</ul>
 	<li>Morfologi</li>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Ikan bandeng memiliki bentuk tubuh yang memanjang, ramping, pipih dan oval. Panjang ikan ini berkisar 5 -10 cm bahkan lebih, dan juga memiliki ketinggian badan berkisar 2-4 cm. Sedangkan ukuran kepala pada ikan bandeng ini sejajar atau berukuran seimbang dengan ukuran badanya yang memiliki bentuk lonjong dan tidak memiliki sisik.  Selain itu, ikan bandeng ini memiliki kepala depan yang mendekati mulut dan sedikit meruncing.</p>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Ikan bandeng memiliki warna keputihan, abu-abu dan silver. Ikan bandeng memiliki sisik kecil yang berdiameter 0,01 -0,005 bahkan lebih. Sisik tersebut memiliki warna yang sama dan juga tidak mengkilap. Sirip badan ikan bandengan ini memiliki beberapa lapisan seperti lilin, memiliki bentuk segitiga dan terletak di insang di bawah perut.</p>	
@@ -43,7 +41,10 @@
 </p></ol>
 <a href="order.php" target="_blank" class="pesansekarang">ORDER</a>
 		</div>
-
+		<?php
+            include 'TampilKomentar.php';
+        ?>
+</div>
 		<?php
             include 'BagianKanan.php';
         ?>

@@ -128,7 +128,7 @@ ul.topnav li.icon {display: none;}
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #528ecc;
-	margin:10px 0 40px  40px;
+	margin:400px 0 40px  400px;
 }
 .pesansekarang:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
@@ -140,6 +140,13 @@ ul.topnav li.icon {display: none;}
 	top:1px;
 }
 
+img.gambarloren	{
+	height:60%;
+	width:60%;
+	float:center;
+	margin:8px 4px 4px 8px;
+	border-radius: 10px;
+}
 
 .container_Utama{
 	background-color: #CEEAFF;
