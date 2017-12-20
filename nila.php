@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PT Aruna Wijaya Sakti</title>
-	
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootshape.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="logincss.css">
-</head>
-<body>
-    <?php
-        include 'SignInUp.php';
-        include 'sliderku.php';
-        include 'navigasi.php';
-    ?>
-
-	<div class="container_Utama">
-		<div class="col-sm-9" style="background-color: #CEEAFF;">
-		<div style="margin:0 30px 0 30px">
-<p><img src="img/nila.jpg" alt height="60%" width="60%" style="float:center;margin:8px 4px 4px 8px;
-border-radius: 10px;"></p>
+<div class ="col-sm-12">
+<p><img src="img/nila.jpg" class="gambarloren"></p>
 <h2>Klasifikasi dan Morfologi Ikan Nila</h2>
 <ol style="margin:4px 0 0 15px">
 	<li>Klasifikasi</li>
@@ -54,25 +34,6 @@ border-radius: 10px;"></p>
 	</li>
 		
 </ol>
-<a href="order.php" target="_blank" class="pesansekarang">ORDER</a>
+<a href="order.php" target="_blank" class="pesansekarang">ORDER SEKARANG</a>
 		</div>
-		<?php
-            include 'TampilKomentar.php';
-        ?>
-		</div>
-
-		<?php
-            include 'BagianKanan.php';
-        ?>
-	</div>
-	   <?php
-            include 'Footer.php';
-        ?> 
-
-<script>
-function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-}
-</script>
-</body>
-</html>
+		

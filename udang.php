@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PT Aruna Wijaya Sakti</title>
-	
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootshape.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="logincss.css">
-</head>
-<body>
-    <?php
-        include 'SignInUp.php';
-        include 'sliderku.php';
-        include 'navigasi.php';
-    ?>
-
-	<div class="container_Utama">
-		<div class="col-sm-9" style="background-color: #CEEAFF;">
-		<div style="margin:0 30px 0 30px">
-<img src="img/udang.jpg" class="gambarloren" style="height:60%;
-	width:60%;
-	float:center;
-	margin:8px 4px 4px 8px;
-	border-radius: 10px;"/>
+<div class ="col-sm-12">
+<img src="img/udang.jpg" class="gambarloren"/>
 <h2>Klasifikasi dan Morfologi Udang Vanamei</h2>
 <ol style="margin:4px 0 0 15px">
 	<li>Klasifikasi</li>		
@@ -44,25 +21,8 @@
 	<li>Habitat dan Penyebaran</li>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Lingkungan hidup optimal yang menunjang pertumbuhan dan sintasan atau kelangsungan hidup yaitu salinitas 0,1-25 ppt (tumbuh dengan baik 10-30 ppt, ideal 15-25 ppt) dan suhu 12-31°C baik pada 24-34°C dan ideal pada 28-31°C). Di beberapa negara Amerika Selatan, Amerika Tengah, dan Cina, udang vaname juga dipelihara di lingkungan tawar dan menunjukkan perbedaan produktivitas yang tidak signifikan dengan yang dipelihara dihabitatnya (Kordi,K, 2009). Udang vaname juga merupakan organisme laut yang menghabiskan siklus hidupnya di muara air payau (Clay dan Navin, 2002 dalam Wibisono 2011).</p>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Menurut Kordi.G, (2012) Udang Vaname (L. vannamei) adalah salah satu spesies udang unggul yang sejak tahun 2002 mulai dikulturkan di tambak-tambak di Indonesia. Udang yang biasa disebut pacific white shrimp atau rostris ini berasal dari perairan Amerika dan hawai dan sukses dikembangkan diberbagai negara di Asia seperti Cina, Thailand, Vietnam dan Taiwan. Secara ekolologis udang vaname mempunyai siklus hidup identik dengan udang windu yaitu melepaskan telur di tengah laut kemudian terbawa arus dan gelombang menuju pesisir menetas menjadi nauplius seterusnya menjadi stadium zoea, mysis, postlarva, dan juvenil. Pada stadium juvenil telah tiba di daerah pesisir selanjutnya kembali ke tengah laut untuk proses pendewasaan telur.</p> 
+	
 </ol>
-<a href="order.php" target="_blank" class="pesansekarang">ORDER</a>
+<a href="order.php" target="_blank" class="pesansekarang">ORDER SEKARANG</a>
 		</div>
-		<?php
-            include 'TampilKomentar.php';
-        ?>
-</div>
-		<?php
-            include 'BagianKanan.php';
-        ?>
-	</div>
-	   <?php
-            include 'Footer.php';
-        ?> 
-
-<script>
-function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-}
-</script>
-</body>
-</html>
+		

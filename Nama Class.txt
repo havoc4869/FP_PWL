@@ -7,3 +7,4 @@ logo
 kaki
 slider
 pesansekarang
+gambarloren
