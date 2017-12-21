@@ -44,7 +44,7 @@
 	   <?php
             include 'Footer.php';
         ?> 
-aaaaa
+
 <script>
 function myFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
