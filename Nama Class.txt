@@ -6,3 +6,5 @@ container_utama
 logo
 kaki
 slider
+pesansekarang
+gambarloren

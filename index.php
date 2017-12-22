@@ -7,6 +7,8 @@
 	<link href="css/bootshape.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+	<link rel="stylesheet" type="text/css" href="klikorder.css">
 
 <?php
     require_once ("koneksi.php");
@@ -23,14 +25,9 @@
 	<div class="container_Utama">
 		<div class="col-sm-9" style="background-color: #CEEAFF;">
 
-            <!-- Editnya di sini ya maaaas!!! Di antara div ini-->
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br>    aaaaaaaaaaaaaa
-            
         <?php
+            include 'bukahalaman.php';
+        
             include 'TampilKomentar.php';
         ?>
 
@@ -40,7 +37,7 @@
             include 'BagianKanan.php';
         ?>
         </div>
-	</div>
+	
 	   <?php
             include 'Footer.php';
         ?> 

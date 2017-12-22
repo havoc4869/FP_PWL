@@ -1,0 +1,39 @@
+.cntfitur{
+	height:200px;
+	width:400px;
+	padding-top :20px;
+}
+
+.gmbr{
+	height : 100px;
+	margin-top : 20px;
+	width : 100px;
+	float : left;
+	clear : none;
+	
+}
+.featur{
+	height:100px;
+	width: 300px; 
+	float: left;
+	padding-left: 10px;
+	
+}
+
+
+/* Calendar */
+
+#calendar_wrap {
+	padding: 20px 25px 20px 20px;
+	position: center;
+}
+
+#calendar table {
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #16B1B0;
+	text-align: center;
+}
+ .pkl{
+	 text-align:center;
+ }
