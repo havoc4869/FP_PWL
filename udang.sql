@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
--- https://www.phpmyadmin.net/
+-- version 4.4.14
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2017 at 06:02 PM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- Generation Time: Dec 22, 2017 at 05:14 PM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -28,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE IF NOT EXISTS `admin` (
   `email` varchar(30) NOT NULL,
   `password` varchar(20) NOT NULL,
   `no hp` int(12) NOT NULL
@@ -40,7 +38,7 @@ CREATE TABLE `admin` (
 -- Table structure for table `customer`
 --
 
-CREATE TABLE `customer` (
+CREATE TABLE IF NOT EXISTS `customer` (
   `email` varchar(30) NOT NULL,
   `nama` text NOT NULL,
   `alamat` varchar(100) NOT NULL,
@@ -53,11 +51,24 @@ CREATE TABLE `customer` (
 -- Table structure for table `komentar`
 --
 
-CREATE TABLE `komentar` (
-  `email` varchar(50) NOT NULL,
+CREATE TABLE IF NOT EXISTS `komentar` (
+  `No` int(11) NOT NULL,
   `nama` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `komentar` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `komentar`
+--
+
+INSERT INTO `komentar` (`No`, `nama`, `email`, `komentar`) VALUES
+(1, 'ssasa', 'asd', 'asass'),
+(2, 'ahmad', 'asasa', 'hahaha'),
+(3, 'gaga', 'adad', 'jbsfjsd'),
+(4, 'Ahmad Jalaluddin', 'ahmad.9072@students.amikom.ac.id', 'Ordernya belum jadi mas . . .tolong diselesaikan'),
+(5, 'Amar Sherifuddin', 'amar.9059@students.amikom.ac.id', 'Jangan lupa dropdownnya diselesaikan biar selesai . . . Masih banyak yang harus dirubah'),
+(6, 'Abiyyu', 'Abiyyu@Abiyyu.com', 'Nice gan');
 
 -- --------------------------------------------------------
 
@@ -65,7 +76,7 @@ CREATE TABLE `komentar` (
 -- Table structure for table `order`
 --
 
-CREATE TABLE `order` (
+CREATE TABLE IF NOT EXISTS `order` (
   `kode_produk` int(5) NOT NULL,
   `email` varchar(30) NOT NULL,
   `jumlah` int(15) NOT NULL,
@@ -79,7 +90,7 @@ CREATE TABLE `order` (
 -- Table structure for table `produk`
 --
 
-CREATE TABLE `produk` (
+CREATE TABLE IF NOT EXISTS `produk` (
   `kode_produk` int(5) NOT NULL,
   `nama_produk` varchar(10) NOT NULL,
   `harga_produk` int(15) NOT NULL
@@ -105,7 +116,7 @@ ALTER TABLE `customer`
 -- Indexes for table `komentar`
 --
 ALTER TABLE `komentar`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`No`);
 
 --
 -- Indexes for table `order`
@@ -121,6 +132,15 @@ ALTER TABLE `produk`
   ADD PRIMARY KEY (`kode_produk`);
 
 --
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `komentar`
+--
+ALTER TABLE `komentar`
+  MODIFY `No` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
 -- Constraints for dumped tables
 --
 
@@ -130,7 +150,6 @@ ALTER TABLE `produk`
 ALTER TABLE `order`
   ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`email`) REFERENCES `customer` (`email`),
   ADD CONSTRAINT `order_ibfk_2` FOREIGN KEY (`kode_produk`) REFERENCES `produk` (`kode_produk`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
