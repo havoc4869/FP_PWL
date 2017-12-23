@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="klikorder.css">
 
 <?php
-    require_once ("koneksi.php");
+    require_once ("koneksi/koneksi.php");
 ?>
 
 </head>
