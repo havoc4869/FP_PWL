@@ -56,6 +56,14 @@ elseif ($page=="nila") {
 		echo "FILE HALAMAN NILA TIDAK ADA";
 	}
 }
+elseif ($page=="order"){
+	if (file_exists("order.php")) {
+		include "order.php";
+	}
+	else{
+		echo "FILE HALAMAN NILA TIDAK ADA";
+	}
+}
 // Batas Pemanggilan Halaman Produk
 
 

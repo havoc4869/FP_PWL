@@ -23,7 +23,7 @@
 
                     <div class="isi" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button1 cancelbtn1">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        
                     </div>
                 </form>
             </div>
