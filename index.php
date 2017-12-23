@@ -15,7 +15,7 @@
 ?>
 
 </head>
-<body>
+<body style="background-color: #e5f3ff;">
     <?php
         include 'SignInUp.php';
         include 'sliderku.php';

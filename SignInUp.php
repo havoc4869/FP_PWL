@@ -40,6 +40,6 @@
             }
             </script>
 
-        <li style="float: right;"><a href="#">Sign Up</a></li>        
+        <li style="float: right;"><a href="SignUp.php">Sign Up</a></li>        
     </ul>
     </div>
