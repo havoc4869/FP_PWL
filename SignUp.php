@@ -13,6 +13,7 @@
             <img src="img/logo/Logo.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
         </a></li>
 
+        
         <li style="float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
             <div id="id01" class="modalo">
                 <form class="modal-conten animate" action="koneksi/login.php">
