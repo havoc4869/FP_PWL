@@ -1,7 +1,7 @@
 <body>
 
 	<div id="personal">
-		<form>
+		<form action="koneksi/registerperusahaan.php" method="post">
 			
 				<h2 style="text-align: center; padding-bottom:15px"> Daftar Sebagai Perusahaan </h2>
 				<label><b>Nama Perusahaan</b></label>
@@ -15,7 +15,7 @@
 	            <label><b>Password</b></label>
 	            <input type="Password" name="psw">
 	            
-	            <button class="reg"> Daftar </button>
+	            <input name="submit" type="submit" class="reg" value="Daftar">
 			
 		</form>
 	</div>
