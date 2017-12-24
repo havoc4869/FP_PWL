@@ -13,10 +13,10 @@
             <img src="img/logo/Logo.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
         </a></li>
 
-        
+
         <li style="float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
             <div id="id01" class="modalo">
-                <form class="modal-conten animate" action="koneksi/login.php">
+                <form class="modal-conten animate" action="login.php" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
                         <img src="img/logo/Logo.png" alt="Avatar" class="avatar">
@@ -33,7 +33,7 @@
 
                     <div class="isi" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button1 cancelbtn1">Cancel</button>
-               
+                        
                     </div>
                 </form>
             </div>

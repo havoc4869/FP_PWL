@@ -3,6 +3,7 @@
 	padding-right: 30%;
 	margin-top: 2%;
 	padding-bottom: 50px;
+	clear: right;
 	
 }
 .reg{
@@ -36,4 +37,5 @@ input[type=email], input[type=password], input[type=text] {
 
 .profildalam{
 	height:805px;
+	clear: right;
 }

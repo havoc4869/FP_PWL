@@ -1,7 +1,7 @@
 <hr>
             <hr>
             
-            <div style="margin: 20px;">
+            <div style="margin: 20px; clear: both;">
                 <h2>Komentar</h2>
             <br>
                 <div style="margin-left: 50px;">

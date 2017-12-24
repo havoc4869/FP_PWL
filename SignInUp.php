@@ -8,14 +8,14 @@
             if (isset($_COOKIE['nama'])){
                 ?>
                 <li style="float: right;"><a href="SignOut.php">Sign Out</a></li>
-                <li style="float: right;"><a href="#"><?php echo $_COOKIE['nama'];?></a></li>
+                <li style="float: right;"><a href="index.php?page=profil"><?php echo $_COOKIE['nama'];?></a></li>
                 <?php
             }
         
             else{
                 ?>
+                <li style="float: right;"><a href="SignUp.php">Sign Up</a></li>   
                 <li style="float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a></li>
-                <li style="float: right;"><a href="SignUp.php">Sign UUp</a></li>   
                 <?php
         }
         ?>
