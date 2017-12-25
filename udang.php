@@ -21,8 +21,24 @@
 	<li>Habitat dan Penyebaran</li>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Lingkungan hidup optimal yang menunjang pertumbuhan dan sintasan atau kelangsungan hidup yaitu salinitas 0,1-25 ppt (tumbuh dengan baik 10-30 ppt, ideal 15-25 ppt) dan suhu 12-31°C baik pada 24-34°C dan ideal pada 28-31°C). Di beberapa negara Amerika Selatan, Amerika Tengah, dan Cina, udang vaname juga dipelihara di lingkungan tawar dan menunjukkan perbedaan produktivitas yang tidak signifikan dengan yang dipelihara dihabitatnya (Kordi,K, 2009). Udang vaname juga merupakan organisme laut yang menghabiskan siklus hidupnya di muara air payau (Clay dan Navin, 2002 dalam Wibisono 2011).</p>
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Menurut Kordi.G, (2012) Udang Vaname (L. vannamei) adalah salah satu spesies udang unggul yang sejak tahun 2002 mulai dikulturkan di tambak-tambak di Indonesia. Udang yang biasa disebut pacific white shrimp atau rostris ini berasal dari perairan Amerika dan hawai dan sukses dikembangkan diberbagai negara di Asia seperti Cina, Thailand, Vietnam dan Taiwan. Secara ekolologis udang vaname mempunyai siklus hidup identik dengan udang windu yaitu melepaskan telur di tengah laut kemudian terbawa arus dan gelombang menuju pesisir menetas menjadi nauplius seterusnya menjadi stadium zoea, mysis, postlarva, dan juvenil. Pada stadium juvenil telah tiba di daerah pesisir selanjutnya kembali ke tengah laut untuk proses pendewasaan telur.</p> 
-	
-</ol>
+<div class="klikorder">
+<?php
+echo "<br>"; 
+	$query_tampilharga = mysql_query("select nama_produk, harga_produk from produk where kode_produk = '1'");
+	while ($record = mysql_fetch_array($query_tampilharga)) {
+?>
+<table border="7">
+<td>
+<p><?php echo "Produk &nbsp: ".$record['nama_produk']; ?>
+</p><p><?php echo "Harga &nbsp &nbsp: Rp.".$record['harga_produk'].",--"; ?>
+</p></td>
+	</table>
+	<?php
+	}
+	?>
+	</div>
+	</ol>
+
 
 
 			<?php
@@ -38,5 +54,6 @@
 			<?php
 				}
 			?>
+
 		</div>
 		

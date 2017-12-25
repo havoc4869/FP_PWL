@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2017 at 11:24 PM
+-- Generation Time: Dec 25, 2017 at 11:48 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -42,23 +42,23 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 CREATE TABLE IF NOT EXISTS `customer` (
+  `id_customer` int(255) NOT NULL AUTO_INCREMENT,
   `email` varchar(100) NOT NULL,
   `password` varchar(30) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `alamat` varchar(100) NOT NULL,
-  `no_hp` int(12) NOT NULL,
+  `no_hp` varchar(12) NOT NULL,
   `status` varchar(10) NOT NULL,
-  PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id_customer`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`email`, `password`, `nama`, `alamat`, `no_hp`, `status`) VALUES
-('a@a', 'aaa', 'a', 'qq', 11, ''),
-('laorensiusangelikus97@gmail.com', 'loren', 'laorensius angelikus', 'Jalan tawes', 2147483647, ''),
-('moza@gmail.com', 'moza', 'moza', 'jalan sesat', 988, 'personal');
+INSERT INTO `customer` (`id_customer`, `email`, `password`, `nama`, `alamat`, `no_hp`, `status`) VALUES
+(4, 'laorensiusangelikus97@gmail.com', 'loren', 'laorensius angelikus', 'jalan tawes', '082242568092', 'personal'),
+(5, 'amar@gmail.com', 'amar', 'amar', 'jalan ngising', '09888', 'perusahaan');
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `komentar` (
   `email` varchar(50) NOT NULL,
   `komentar` text NOT NULL,
   PRIMARY KEY (`No`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `komentar`
@@ -82,7 +82,8 @@ INSERT INTO `komentar` (`No`, `nama`, `email`, `komentar`) VALUES
 (4, 'Ahmad Jalaluddin', 'ahmad.9072@students.amikom.ac.id', 'Ordernya belum jadi mas . . .tolong diselesaikan'),
 (5, 'Amar Sherifuddin', 'amar.9059@students.amikom.ac.id', 'Jangan lupa dropdownnya diselesaikan biar selesai . . . Masih banyak yang harus dirubah'),
 (6, 'Abiyyu', 'Abiyyu@Abiyyu.com', 'Nice gan'),
-(7, 'laorensius angelikus', 'laorensiusangelikus97@gmail.com', 'Berapa Harga Web Ini mas ? bsia ditawar tidak ?');
+(7, 'laorensius angelikus', 'laorensiusangelikus97@gmail.com', 'Berapa Harga Web Ini mas ? bsia ditawar tidak ?'),
+(8, 'laorensius angelikus', 'wasd', 'dae');
 
 -- --------------------------------------------------------
 
@@ -92,13 +93,21 @@ INSERT INTO `komentar` (`No`, `nama`, `email`, `komentar`) VALUES
 
 CREATE TABLE IF NOT EXISTS `order` (
   `kode_produk` int(5) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `jumlah` int(15) NOT NULL,
-  `harga_bayar` int(25) NOT NULL,
-  `tgl_bayar` int(10) NOT NULL,
-  KEY `email` (`email`),
-  KEY `kode_produk` (`kode_produk`)
+  `id_customer` int(255) NOT NULL,
+  `jumlah` varchar(50) NOT NULL,
+  `harga_bayar` varchar(50) NOT NULL,
+  `tgl_bayar` datetime NOT NULL,
+  KEY `kode_produk` (`kode_produk`),
+  KEY `id_customer` (`id_customer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`kode_produk`, `id_customer`, `jumlah`, `harga_bayar`, `tgl_bayar`) VALUES
+(1, 4, '2', '13000000', '2017-12-02 00:00:00'),
+(2, 5, '3', '134039', '2017-12-27 10:20:19');
 
 -- --------------------------------------------------------
 
@@ -114,6 +123,16 @@ CREATE TABLE IF NOT EXISTS `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`kode_produk`, `nama_produk`, `harga_produk`) VALUES
+(1, 'udang', 150000),
+(2, 'nila', 4500),
+(3, 'kakap', 36000),
+(4, 'bandeng', 27000);
+
+--
 -- Constraints for dumped tables
 --
 
@@ -121,8 +140,8 @@ CREATE TABLE IF NOT EXISTS `produk` (
 -- Constraints for table `order`
 --
 ALTER TABLE `order`
-  ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`email`) REFERENCES `customer` (`email`),
-  ADD CONSTRAINT `order_ibfk_2` FOREIGN KEY (`kode_produk`) REFERENCES `produk` (`kode_produk`);
+  ADD CONSTRAINT `fk_id_cust` FOREIGN KEY (`id_customer`) REFERENCES `customer` (`id_customer`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_kode` FOREIGN KEY (`kode_produk`) REFERENCES `produk` (`kode_produk`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

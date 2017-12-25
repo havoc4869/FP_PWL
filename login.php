@@ -40,6 +40,7 @@ $count=mysql_num_rows($result);
 		$record = mysql_fetch_array($result);
 		setcookie("nama", $record["nama"], time()+3600);
 		setcookie("email", $record["email"], time()+3600);
+		setcookie("id_customer", $record["id_customer"], time()+3600);
 ?>
 
 <script type="text/javascript">
