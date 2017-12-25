@@ -64,9 +64,9 @@ elseif ($page=="order"){
 		echo "FILE HALAMAN NILA TIDAK ADA";
 	}
 }
-elseif ($page=="profil"){
-	if (file_exists("profil.php")) {
-		include "profil.php";
+elseif ($page=="tentang"){
+	if (file_exists("tentang.php")) {
+		include "tentang.php";
 	}
 	else{
 		echo "FILE HALAMAN NILA TIDAK ADA";

@@ -1,4 +1,4 @@
-<div class ="col-sm-12">
+<div class ="col-sm-12" style="padding:25px 15px 50px">
 <img src="img/udang.jpg" class="gambarloren"/>
 <h2>Klasifikasi dan Morfologi Udang Vanamei</h2>
 <ol style="margin:4px 0 0 15px">

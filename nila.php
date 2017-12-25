@@ -1,4 +1,4 @@
-<div class ="col-sm-12">
+<div class ="col-sm-12" style="padding:25px 15px 50px">
 <p><img src="img/nila.jpg" class="gambarloren"></p>
 <h2>Klasifikasi dan Morfologi Ikan Nila</h2>
 <ol style="margin:4px 0 0 15px">
