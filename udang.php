@@ -28,7 +28,7 @@
 			<?php
 				if(isset($_COOKIE['nama'])){
 			?>
-			<a href="order.php?page=orderudang" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<a href="order.php?page=orderudang"  class="btono btono2">ORDER SEKARANG</a>
 			<?php
 				}
 				else {

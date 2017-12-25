@@ -1,7 +1,7 @@
 <div>
     <ul class="top">
         <li><a href="#">
-            <img src="img/logo/Logo.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
+            <img src="img/logo/Logotext.png" style="height: 45px; margin-left: 10px; margin-top: -12px; ">
         </a></li>
 
         <?php
