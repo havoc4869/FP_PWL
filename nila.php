@@ -34,6 +34,19 @@
 	</li>
 		
 </ol>
-<a href="order.php?page=ordernila" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+
+<?php
+				if(isset($_COOKIE['nama'])){
+			?>
+			<a href="order.php?page=ordernila" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<?php
+				}
+				else {
+			?>
+			<a onclick="alert('Anda Belum Login. Silahkan Login Dulu')" class="btono btono2">ORDER SEKARANG</a>
+			
+			<?php
+				}
+			?>
 		</div>
 		

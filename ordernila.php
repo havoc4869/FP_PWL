@@ -1,6 +1,5 @@
 <div class="col-sm-12" style="margin:25px 20px 0 20px">
 			
-					<form method="post" onSubmit="return validasi()">
 					<h3>NILA</h3>
 					<hr>
 				<div class="col-sm-9">	

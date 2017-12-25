@@ -1,6 +1,5 @@
 <div class="col-sm-12" style="margin:15px 25px 15px 20px">
 	
-			<form method="post" onSubmit="return validasi()">
 					<h3>UDANG</h3>
 					<hr>
 					<div class="col-sm-9" >

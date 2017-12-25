@@ -24,5 +24,17 @@
 					</ul>
 				<p>
 			</ol>
+			<?php
+				if(isset($_COOKIE['nama'])){
+			?>
 			<a href="order.php?page=orderkakap" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<?php
+				}
+				else {
+			?>
+			<a onclick="alert('Anda Belum Login. Silahkan Login Dulu')" class="btono btono2">ORDER SEKARANG</a>
+			
+			<?php
+				}
+			?>
 </div>
