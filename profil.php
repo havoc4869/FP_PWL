@@ -2,7 +2,7 @@
 require_once ("koneksi/koneksi.php");
 if (isset($_COOKIE['nama'])){
 	$sql = "SELECT * FROM customer WHERE email='".$_COOKIE['email']."'";
-	$result=mysql_query($sql);
+	$result = mysql_query($sql);
 	$hasil = mysql_fetch_array($result);
 ?>
 

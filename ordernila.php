@@ -14,31 +14,34 @@
 				<div class="col-sm-3" >
 					<div class="color-quality">
 						<div class="color-quality-right">
-						<h2>Rp aaaaaa</h2>
+						<h2>Rp</h2>
 						<h4 style="margin-top: 6px;">Stock :</h4>
-						<input onclick="changeurl()" type="submit" class="bton bton2" value="Info" name="addKeranjang">
+						<a href="index.php?page=nila"> <input onclick="changeurl()" type="submit" class="bton bton2" value="Info" name="addKeranjang"> </a>
 						
 						
 							<h5>Kuantitas :</h5>
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
+									<input style="background-color: white; color: black" class="value-minus" type="button" value="-" id="moins" onclick="minus()">
+								    <input class="value" type="text" size="25" value="1" id="count">
+								    <input style="background-color: white; color: black" class="value-plus" type="button" value="+" id="plus" onclick="plus()">
 								</div>
 								</div>
 						</div>
 						<script>
-									$('.value-plus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
-										divUpd.text(newVal);
-									});
-
-									$('.value-minus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
-										if(newVal>=1) divUpd.text(newVal);
-									});
-									</script>
+								var count = 1;
+							    var countEl = document.getElementById("count");
+							    function plus(){
+							        count++;
+							        countEl.value = count;
+							    }
+							    function minus(){
+							      if (count > 1) {
+							        count--;
+							        countEl.value = count;
+							      }  
+							    }
+						</script>
 					</div>
 					<div class="description" style="margin-top: 12px;">
 						<input type="hidden" name="kuantitas" value="1">
