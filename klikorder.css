@@ -29,7 +29,15 @@ img.gambarloren	{
 	border-radius: 10px;
 }
 
-.klikorder h4{
-	text-align:center;
-	color:black;
+.klikorder{
+	
+	font-size:30px;
+	display:inline;
+	color:#000000;
+	padding: 7px;
+	border-radius:3px;
+	margin: 20px 0 0 0;
+}
+.klikorder td {
+	padding: 10px 10px 10px 10px;
 }

@@ -27,21 +27,24 @@ echo "<br>";
 	$query_tampilharga = mysql_query("select nama_produk, harga_produk from produk where kode_produk = '1'");
 	while ($record = mysql_fetch_array($query_tampilharga)) {
 ?>
-	<h4>Produk<br></h4>
-	<h4><?php echo "Produk &nbsp: ".$record['nama_produk']; ?></h4>
-    <h4><?php echo "Harga &nbsp &nbsp: ".$record['harga_produk']; ?></h4>
-    <?php
+<table border="7">
+<td>
+<p><?php echo "Produk &nbsp: ".$record['nama_produk']; ?>
+</p><p><?php echo "Harga &nbsp &nbsp: Rp.".$record['harga_produk'].",--"; ?>
+</p></td>
+	</table>
+	<?php
 	}
 	?>
 	</div>
 	</ol>
-</ol>
+
 
 
 			<?php
 				if(isset($_COOKIE['nama'])){
 			?>
-			<a href="order.php?page=orderudang" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<a href="order.php?page=orderudang"  class="btono btono2">ORDER SEKARANG</a>
 			<?php
 				}
 				else {

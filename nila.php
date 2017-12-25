@@ -32,13 +32,28 @@
 			<li>Bagian tubuh dapat dimanfaatkan dibeberapa bidang</li>
 		</ul>
 	</li>
-		
+<div class="klikorder">
+<?php
+echo "<br>"; 
+	$query_tampilharga = mysql_query("select nama_produk, harga_produk from produk where kode_produk = '2'");
+	while ($record = mysql_fetch_array($query_tampilharga)) {
+?>
+<table border="7">
+<td>
+<p><?php echo "Produk &nbsp: ".$record['nama_produk']; ?>
+</p><p><?php echo "Harga &nbsp &nbsp: Rp.".$record['harga_produk'].",--"; ?>
+</p></td>
+	</table>
+	<?php
+	}
+	?>
+	</div>		
 </ol>
 
 <?php
 				if(isset($_COOKIE['nama'])){
 			?>
-			<a href="order.php?page=ordernila" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<a href="order.php?page=ordernila"  class="btono btono2">ORDER SEKARANG</a>
 			<?php
 				}
 				else {

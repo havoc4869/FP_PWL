@@ -23,11 +23,27 @@
 							<p style="text-align:justify;"> &nbsp &nbsp&nbsp Ikan kakap putih, hampir memiliki morfoligi yang sama dengan kakap merah. Yang membedakan adalah pada warna kulit dari kakap putih adalah putih mengkilat. Perbedaan lain yang mencolok adalah bentuk mulut yang lebih moncong. Kemudian, ikan kakap putih dikenal lebih agresif daripada ikan kakap merah. Namun demikian, ikan kakap merah juga memiliki keagresifan yang besar. Terbukti ketika kita memancing ikan ini, maka ketika ikan terkena sambaran umpan, dia akan langsung membawa mata kail kedasar sungai, atau bahkan keluar keatas permukaan untuk loncat. Bahkan baik ikan kakap merah maupun kakap putih bisa saja memutuskan tali senar pancing dengan mudah menggunakan giginya yang tajam.</p>
 					</ul>
 				<p>
+				<div class="klikorder">
+<?php
+echo "<br>"; 
+	$query_tampilharga = mysql_query("select nama_produk, harga_produk from produk where kode_produk = '3'");
+	while ($record = mysql_fetch_array($query_tampilharga)) {
+?>
+<table border="7">
+<td>
+<p><?php echo "Produk &nbsp: ".$record['nama_produk']; ?>
+</p><p><?php echo "Harga &nbsp &nbsp: Rp.".$record['harga_produk'].",--"; ?>
+</p></td>
+	</table>
+	<?php
+	}
+	?>
+	</div>
 			</ol>
 			<?php
 				if(isset($_COOKIE['nama'])){
 			?>
-			<a href="order.php?page=orderkakap" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<a href="order.php?page=orderkakap" class="btono btono2">ORDER SEKARANG</a>
 			<?php
 				}
 				else {

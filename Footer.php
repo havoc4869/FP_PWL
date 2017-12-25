@@ -42,10 +42,10 @@
                 alamat web menyusul
 				</p>
                 <hr>
-                <a href="www.facebook.com"><img src="img/logo/fb.png" class="logo"></a>
-                <a href="twitter.com"><img src="img/logo/twet.jpg" class="logo"></a>
-                <a href="youtube.com"><img src="img/logo/you.jpg" class="logo"></a>
-                <a href="https://plus.google.com"><img src="img/logo/gug.jpg" class="logo"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="img/logo/fb.png" class="logo"></a>
+                <a href="http://twitter.com" target="_blank"><img src="img/logo/twet.jpg" class="logo"></a>
+                <a href="http://youtube.com" target="_blank"><img src="img/logo/you.jpg" class="logo"></a>
+                <a href="https://plus.google.com" target="_blank"><img src="img/logo/gug.jpg" class="logo"></a>
 
             </div>
         </div>
