@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="order.css">
     <link rel="stylesheet" type="text/css" href="logincss.css">
+	<link rel="stylesheet" type="text/css" href="csshome.css">
+	<link rel="stylesheet" type="text/css" href="cssorder.css">
 </head>
 <body>
 	 <?php
@@ -16,44 +18,65 @@
     ?>
 
     <div class="container_Utama">
-    	<div class="col-sm-9" style="background-color:#CEEAFF ;">
-    		<div >
-    			<a href="#"> 
-    				<img src="img/cart.png" style="height: 6%;width: 6%;float: right;">
-    				<span id="tampilHarga" style="float: right;">Rp 0</span> <br>
-    				<span id="tampilJumlah" style="float: right;"> 0 </span> <br><br><br>
-    			</a>
-    		</div>
-    		<div class="produk">
+    	<div class="col-sm-9">
+		
+						<div id="horizontalTab" style="display: block; width: auto; margin-top: 50px; ">
+							<ul class="resp-tabs-list">
+								<a href="?page=orderudang"><li class="resp-tab-item"><span>Udang</span></li> </a>
+								<a href="?page=ordernila"><li class="resp-tab-item" ><span>Nila</span></li> </a>
+								<a href="?page=orderkakap"><li class="resp-tab-item" ><span>Kakap</span></li> </a>
+								<a href="?page=orderbandeng"><li class="resp-tab-item" ><span>Bandeng</span></li> </a>
+							</ul>
+							<?php
 
-    			<table border="2">
-    				<tr>
-    					<th>Produk</th>
-    				</tr>
-    				<tr>
-    					<td>Udang</td>
-    				</tr>
-    				<tr>
-    					<td>Ikan Nila</td>
-    				</tr>
-    				<tr>
-    					<td>Ikan Kakap</td>
-    				</tr>
-    				<tr>
-    					<td>Ikan Bandeng</td>
-    				</tr>
-    				
-    			</table>
+							$page= @$_REQUEST['page'];
+							if ($page=="orderudang") {
+								if(file_exists ("orderudang.php")) {
+									include "orderudang.php";
+								}
+								else {
+									echo "FILE TIDAK ADA";
+								}
+							}
 
-    			<img src="img/udang.jpg" style="width: 50%;height: 30%;margin-left: 20%">
-    			<button>Beli Sekarang</button>
-    		</div>
-		</div>
+							// bla bla bla bla .. gua bingung jelasinnya 
 
+							elseif ($page=="ordernila") {
+								if(file_exists ("ordernila.php")) {
+									include "ordernila.php";
+								}
+								else {
+									echo "FILE TIDAK ADA";
+								}
+							}
+							
+							elseif ($page=="orderkakap") {
+								if(file_exists ("orderkakap.php")) {
+									include "orderkakap.php";
+								}
+								else {
+									echo "FILE TIDAK ADA";
+								}
+							}
+							elseif ($page=="orderbandeng") {
+								if(file_exists ("orderbandeng.php")) {
+									include "orderbandeng.php";
+								}
+								else {
+									echo "FILE TIDAK ADA";
+								}
+							}
+							
+							?>
+
+						
+						</div>
+		</div>		
 	<?php
             include 'BagianKanan.php';
         ?>
-    </div>
+		
+	</div>
 
     <?php
     	include 'Footer.php';

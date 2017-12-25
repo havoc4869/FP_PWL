@@ -34,6 +34,6 @@
 	</li>
 		
 </ol>
-<a href="order.php" target="_blank" class="pesansekarang">ORDER SEKARANG</a>
+<a href="order.php?page=ordernila" target="_blank" class="btono btono2">ORDER SEKARANG</a>
 		</div>
 		
