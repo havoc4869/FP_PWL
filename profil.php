@@ -1,5 +1,5 @@
 <?php
-require_once ("koneksi/koneksi.php");
+
 if (isset($_COOKIE['nama'])){
 	$sql = "SELECT * FROM customer WHERE id_customer='".$_COOKIE['id_customer']."'";
 	$result=mysql_query($sql);
