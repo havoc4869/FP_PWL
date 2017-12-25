@@ -23,6 +23,20 @@
 	<p style="text-align:justify;"> &nbsp &nbsp&nbsp Menurut Kordi.G, (2012) Udang Vaname (L. vannamei) adalah salah satu spesies udang unggul yang sejak tahun 2002 mulai dikulturkan di tambak-tambak di Indonesia. Udang yang biasa disebut pacific white shrimp atau rostris ini berasal dari perairan Amerika dan hawai dan sukses dikembangkan diberbagai negara di Asia seperti Cina, Thailand, Vietnam dan Taiwan. Secara ekolologis udang vaname mempunyai siklus hidup identik dengan udang windu yaitu melepaskan telur di tengah laut kemudian terbawa arus dan gelombang menuju pesisir menetas menjadi nauplius seterusnya menjadi stadium zoea, mysis, postlarva, dan juvenil. Pada stadium juvenil telah tiba di daerah pesisir selanjutnya kembali ke tengah laut untuk proses pendewasaan telur.</p> 
 	
 </ol>
-<a href="order.php?page=orderudang" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+
+
+			<?php
+				if(isset($_COOKIE['nama'])){
+			?>
+			<a href="order.php?page=orderudang" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<?php
+				}
+				else {
+			?>
+			<a onclick="alert('Anda Belum Login. Silahkan Login Dulu')" class="btono btono2">ORDER SEKARANG</a>
+			
+			<?php
+				}
+			?>
 		</div>
 		
