@@ -19,5 +19,5 @@
 			<p style="text-align:justify;"> &nbsp &nbsp&nbsp Sedangkan sirip bagian punggung ikan bandeng ini memiliki tulang yang tersusun 14 batang. Salah satunya sirip yang terletak di bagian atas punggung memiliki fungis untuk mengontrol berenag ikan. Selain itu, sirip di bagian perut ikan bandengn ini terdapat di dekat bagian anus, yang memiliki fungi untuk mengatur keseimbangan berenang.</p>
 			<p style="text-align:justify;"> &nbsp &nbsp&nbsp Sedangkan sirip lainnya pada ikan bandeng ini terletak di bagian belakang sangat besar, berwarna kehitaman atau kecoklatan dan juga runcing di bagian ujung. Sirip ini berfungsi untuk mengemudi kecepatan berang pada ikan bandeng. Perlu di ketahui bahwa ikan bandengan adalah salah satu jenis ikan eurihalin, yang dapat berkembangbiak di sungai air tawar, air payau, dan air laut. Namun, untuk pertumbuhan dan perkembangan ikan bandeng ini sangat relatif cepat yaitu 1-2 kg per ekornya bahkan juga bisa lebih tergantung pemeliharan ikan bandeng.</p>
 		</ol>
-		<a href="order.php?page=orderbandeng" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+		<a href="order.php?page=orderbandeng" target="_blank" class="btono btono2" style="text-decoration:none">ORDER SEKARANG</a>
 </div>

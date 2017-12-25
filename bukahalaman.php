@@ -64,6 +64,14 @@ elseif ($page=="order"){
 		echo "FILE HALAMAN NILA TIDAK ADA";
 	}
 }
+elseif ($page=="profil"){
+	if (file_exists("profil.php")) {
+		include "profil.php";
+	}
+	else{
+		echo "FILE HALAMAN NILA TIDAK ADA";
+	}
+}
 // Batas Pemanggilan Halaman Produk
 
 

@@ -12,7 +12,7 @@
 	
 
 <?php
-    require_once ("koneksi.php");
+    require_once ("koneksi/koneksi.php");
 ?>
 
 </head>

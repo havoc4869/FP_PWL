@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="cssorder.css">
 
 <?php
-    require_once ("koneksi.php");
+    require_once ("koneksi/koneksi.php");
 ?>
 
 </head>
@@ -28,7 +28,7 @@
 		<div class="col-sm-12">
 		<div class="checkout">
 					<div class="container">
-						<h3>Daftar Keranjang</h3>
+						<h1 style="text-align: center">Daftar Keranjang</h1>
 						<div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
 							<table class="timetable_sub">
 								<thead>
