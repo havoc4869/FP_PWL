@@ -5,8 +5,24 @@
 		<li><a href="index.php?page=nila">Ikan Nila</a></li>
 		<li><a href="index.php?page=kakap">Ikan Kakap</a></li>
 		<li><a href="index.php?page=bandeng">Ikan Bandeng</a></li>
-  		<li><a href="order.php?page=orderudang">Order</a></li>
-  		<li><a href="tentang.php">Tentang Kami</a></li>
+
+  		
+  		
+  		<?php
+				if(isset($_COOKIE['nama'])){
+			?>
+			<li><a href="order.php?page=orderudang">Order</a></li>
+			<?php
+				}
+				else {
+			?>
+			<li style="cursor: pointer;"><a onclick="alert('Anda Belum Login. Silahkan Login Dulu')">Order</a></li>
+			<?php
+				}
+			?>
+
+  		<li><a href="index.php?page=tentang">Tentang Kami</a></li>
+
 		<li style="float: right">
 		<div class="col-md-2 header-right">
 				<div class="cart box_1">

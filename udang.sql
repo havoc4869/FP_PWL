@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2017 at 11:24 PM
+-- Generation Time: Dec 25, 2017 at 07:17 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -57,6 +57,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
 
 INSERT INTO `customer` (`email`, `password`, `nama`, `alamat`, `no_hp`, `status`) VALUES
 ('a@a', 'aaa', 'a', 'qq', 11, ''),
+('amar@gmail.com', 'amar', 'amar', 'eek goreng', 899, 'perusahaan'),
 ('laorensiusangelikus97@gmail.com', 'loren', 'laorensius angelikus', 'Jalan tawes', 2147483647, ''),
 ('moza@gmail.com', 'moza', 'moza', 'jalan sesat', 988, 'personal');
 
@@ -112,6 +113,16 @@ CREATE TABLE IF NOT EXISTS `produk` (
   `harga_produk` int(15) NOT NULL,
   PRIMARY KEY (`kode_produk`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`kode_produk`, `nama_produk`, `harga_produk`) VALUES
+(1, 'udang', 150000),
+(2, 'nila', 4500),
+(3, 'kakap', 36000),
+(4, 'bandeng', 27000);
 
 --
 -- Constraints for dumped tables

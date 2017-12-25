@@ -39,6 +39,7 @@ $count=mysql_num_rows($result);
 		$_SESSION['pass']=$mypassword;
 		$record = mysql_fetch_array($result);
 		setcookie("nama", $record["nama"], time()+3600);
+		setcookie("email", $record["email"], time()+3600);
 ?>
 
 <script type="text/javascript">

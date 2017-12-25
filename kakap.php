@@ -1,4 +1,4 @@
-<div class ="col-sm-12">
+<div class ="col-sm-12 " style="padding:25px 15px 50px">
 			<p><img src="img/kakap.jpg" class="gambarloren"></p>
 			<h2>Klasifikasi dan Morfologi Udang Vanamei</h2>
 			<ol style="margin:4px 0 0 15px">
@@ -24,5 +24,17 @@
 					</ul>
 				<p>
 			</ol>
+			<?php
+				if(isset($_COOKIE['nama'])){
+			?>
 			<a href="order.php?page=orderkakap" target="_blank" class="btono btono2">ORDER SEKARANG</a>
+			<?php
+				}
+				else {
+			?>
+			<a onclick="alert('Anda Belum Login. Silahkan Login Dulu')" class="btono btono2">ORDER SEKARANG</a>
+			
+			<?php
+				}
+			?>
 </div>

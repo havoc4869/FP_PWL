@@ -28,7 +28,7 @@
 		<div class="col-sm-12">
 		<div class="checkout">
 					<div class="container">
-						<h1 style="text-align: center">Daftar Keranjang</h1>
+						<h1 style="text-align: center; font-size: 50px;">Daftar Keranjang</h1>
 						<div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
 							<table class="timetable_sub">
 								<thead>
