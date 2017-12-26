@@ -73,7 +73,7 @@
 										<a href="orderudang.php">
 										<input type="submit" value ="Kembali Belanja" class = "bton bton2">
 										</a>
-										<a href="pesanan.php">
+										<a href="beli.php">
 										<input type="submit" value="Beli Sekarang" class = "bton bton2">
 										</a>
 
