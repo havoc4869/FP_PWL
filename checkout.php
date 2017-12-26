@@ -41,7 +41,8 @@
 									</tr>
 								</thead>
 								<?php
-									$ambil_produk1 = mysql_query("SELECT * FROM orderpesanan o JOIN produk p ON o.kode_produk = p.kode_produk where o.id_customer = '".$_COOKIE['id_customer']."' and o.status = 'belum'");
+									$ambil_produk1 = mysql_query("SELECT * FROM orderpesanan o JOIN produk p ON o.kode_produk = p.kode_produk 
+										where o.id_customer = '".$_COOKIE['id_customer']."' and o.status = 'belum'");
 									while( $data1 = mysql_fetch_array($ambil_produk1)) 
 									{
 								?>

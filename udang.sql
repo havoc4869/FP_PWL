@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2017 at 11:28 AM
+-- Generation Time: Dec 26, 2017 at 07:10 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -31,6 +31,28 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `password` varchar(20) NOT NULL,
   `no hp` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bank`
+--
+
+CREATE TABLE IF NOT EXISTS `bank` (
+  `no_rek` varchar(100) NOT NULL,
+  `nama_bank` varchar(100) NOT NULL,
+  `nama_pemilik` varchar(100) NOT NULL,
+  `no_hp` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bank`
+--
+
+INSERT INTO `bank` (`no_rek`, `nama_bank`, `nama_pemilik`, `no_hp`) VALUES
+('34367785662134', 'BNI', 'Mozaik Ramadhan', '089423434234'),
+('12345609887', 'BRI', 'Ahmad Jalaluddin', '085756636463'),
+('2345609882', 'MANDIRI', 'Amar Sheriffudin', '081234567890');
 
 -- --------------------------------------------------------
 
@@ -100,13 +122,8 @@ CREATE TABLE IF NOT EXISTS `orderpesanan` (
 --
 
 INSERT INTO `orderpesanan` (`kode_produk`, `id_customer`, `jumlah`, `harga_bayar`, `tgl_bayar`, `status`) VALUES
-(1, 4, '2', 13000000, '2017-12-02 00:00:00', 'belum'),
-(2, 5, '3', 134039, '2017-12-27 10:20:19', 'belum'),
-(1, 5, '3', 15000, '2017-12-26 14:28:45', 'belum'),
-(1, 5, '7', 150000, '2017-12-26 14:35:16', 'belum'),
-(1, 5, '3', 150000, '2017-12-26 14:35:16', 'belum'),
-(2, 5, '4', 4500, '2017-12-26 14:43:46', 'belum'),
-(4, 5, '11', 27000, '2017-12-26 14:46:23', 'belum');
+(1, 5, '3', 150000, '2017-12-26 20:18:45', 'belum'),
+(3, 5, '8', 36000, '2017-12-27 01:01:14', 'belum');
 
 -- --------------------------------------------------------
 
@@ -139,6 +156,12 @@ INSERT INTO `produk` (`kode_produk`, `nama_produk`, `harga_produk`) VALUES
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `bank`
+--
+ALTER TABLE `bank`
+  ADD PRIMARY KEY (`nama_bank`);
 
 --
 -- Indexes for table `customer`
