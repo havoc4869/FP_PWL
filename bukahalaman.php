@@ -80,6 +80,15 @@ elseif ($page=="profil"){
 		echo "FILE HALAMAN NILA TIDAK ADA";
 	}
 }
+
+elseif ($page=="checkout"){
+	if (file_exists("checkout.php")) {
+		include "checkout.php";
+	}
+	else{
+		echo "FILE HALAMAN NILA TIDAK ADA";
+	}
+}
 // Batas Pemanggilan Halaman Produk
 
 
