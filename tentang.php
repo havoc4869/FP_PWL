@@ -1,4 +1,4 @@
-<div class ="col-sm-12" style="padding:25px 15px 50px">
+<div class ="col-sm-12" style="padding:25px 15px 50px 20px">
 <h2> Sejarah PT. Aruna Wijaya Sakti (Sekarang)</h2>
 	<p style="text-align:justify;"><img src="img/aruna.jpg" height="40%" width="40%" style="float:right;margin:0 0 4px 8px;"></p>
 		<p style="text-align:justify;"> &nbsp &nbsp&nbsp Bumi dipasena adalah hamparan lahan yang tadinya hutan rawa rawa bertanah gambut dan sunyi. Tidak ada penduduk yang bermukim disana karena masih banyak binatang buas yang berbahaya. Ada buaya, ular, harimau bahkan gajah liar pun dulunya banyak disana.	</p>

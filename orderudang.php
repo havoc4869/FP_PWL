@@ -1,4 +1,4 @@
-<div class="col-sm-12" style="margin:15px 25px 15px 20px">
+<div class="col-sm-12" style="margin:15px 25px 15px 20px 20px">
 	
 					<h3>UDANG</h3>
 					<hr>
