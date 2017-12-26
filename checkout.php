@@ -34,38 +34,38 @@
 								<thead>
 									<tr>
 										<th>Hapus</th>
-										<th>Barang</th>
-										<th>Kuantitas</th>
 										<th>Nama Barang</th>
+										<th>Kuantitas</th>
 										<th>Harga</th>
+										<th> Status </th>
 									</tr>
 								</thead>
 								<?php
-									$ambil_produk = mysql_query("SELECT pl.id_barang, kuantitas, nama, harga
-													FROM tb_barang pl
-													JOIN tb_keranjang pn ON pl.id_barang = pn.id_barang WHERE STATUS='keranjang' && id_pembeli='$id_pembeli1'");
-									while($data = mysql_fetch_array($ambil_produk)){
+									$ambil_produk1 = mysql_query("SELECT * FROM orderpesanan o JOIN produk p ON o.kode_produk = p.kode_produk where o.id_customer = '".$_COOKIE['id_customer']."' and o.status = 'belum'");
+									while( $data1 = mysql_fetch_array($ambil_produk1)) 
+									{
 								?>
 									<tr class="rem1">
 										<form method="post" onSubmit="return validasi()">
 										<td class="invert-closeb">
-											<input onclick="changeurl()" type="submit" class="btn" value="Delete" name="delete">
+											<input type="submit" class="btn" value="Delete" name="delete">
 										</td>
-										<td class="invert-image"><a href="single.html"><img src="images/w4.png" alt=" " class="img-responsive" /></a></td>
-										<td class="invert"><?=$data['1'];?></td>
-										<td class="invert"><?=$data['2'];?></td>
-										<td class="invert">Rp<?=$data['3'];?></td>
+										<td class="invert"> <?php echo $data1['nama_produk']; ?> </td>
+										<td class="invert"> <?php echo $data1['jumlah']; ?></td>
+										<td class="invert">Rp<?php echo $data1['harga_bayar']; ?></td>
+										<td class="invert"> <?php echo $data1['status']; ?> </td>
+									<?php
+										}
+									?>
+
 										</form>
 									</tr>
 
-									<?php
-											}
-									?>
 							</table>
 						</div>
 						<div class="checkout-left">	
 								<div class="description">
-										<a href="./">
+										<a href="orderudang.php">
 										<input type="submit" value ="Kembali Belanja" class = "bton bton2">
 										</a>
 										<a href="pesanan.php">
