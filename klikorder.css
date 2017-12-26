@@ -28,3 +28,16 @@ img.gambarloren	{
 	margin:8px 4px 4px 8px;
 	border-radius: 10px;
 }
+
+.klikorder{
+	
+	font-size:30px;
+	display:inline;
+	color:#000000;
+	padding: 7px;
+	border-radius:3px;
+	margin: 20px 0 0 0;
+}
+.klikorder td {
+	padding: 10px 10px 10px 10px;
+}

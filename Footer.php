@@ -1,3 +1,11 @@
+<?php
+require_once ("koneksi/koneksi.php");
+    if (isset($_COOKIE['nama'])){
+    $sql = "SELECT * FROM customer WHERE email='".$_COOKIE['email']."'";
+    $result=mysql_query($sql);
+    $hasil = mysql_fetch_array($result);}
+?>
+
 <div class="container_Utama" >
 	
     <div id="footer">
@@ -11,12 +19,12 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="nama" class="form-control" required="required" placeholder="Nama">
+                                <input type="text" name="nama" class="form-control" required="required" placeholder="Nama" value="<?php echo $hasil['nama'];?>">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" required="required" placeholder="E-mail">
+                                <input type="text" name="email" class="form-control" required="required" placeholder="E-mail" value="<?php echo $hasil['email'];?>">
                             </div>
                         </div>
                     </div>
@@ -42,10 +50,10 @@
                 alamat web menyusul
 				</p>
                 <hr>
-                <a href="www.facebook.com"><img src="img/logo/fb.png" class="logo"></a>
-                <a href="twitter.com"><img src="img/logo/twet.jpg" class="logo"></a>
-                <a href="youtube.com"><img src="img/logo/you.jpg" class="logo"></a>
-                <a href="https://plus.google.com"><img src="img/logo/gug.jpg" class="logo"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="img/logo/fb.png" class="logo"></a>
+                <a href="http://twitter.com" target="_blank"><img src="img/logo/twet.jpg" class="logo"></a>
+                <a href="http://youtube.com" target="_blank"><img src="img/logo/you.jpg" class="logo"></a>
+                <a href="https://plus.google.com" target="_blank"><img src="img/logo/gug.jpg" class="logo"></a>
 
             </div>
         </div>
