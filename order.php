@@ -1,3 +1,6 @@
+<?php
+include 'koneksi/CekLogin.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,3 +86,4 @@
     ?>
 </body>
 </html>
+

@@ -1,3 +1,6 @@
+<?php
+include 'koneksi/CekLogin.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -121,3 +124,5 @@ function myFunction() {
 </script>
 </body>
 </html>
+
+

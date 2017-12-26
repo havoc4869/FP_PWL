@@ -1,3 +1,6 @@
+<?php
+include 'koneksi/CekLogin.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +29,7 @@ if (isset($_COOKIE['nama'])){
 
 
 </head>
-<body style="background-color: #e5f3ff;"">
+<body style="background-color: #e5f3ff;">
 	<?php
         include 'SignInUp.php';
         include 'sliderku.php';

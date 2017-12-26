@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<div class="col-sm-12" style="margin:15px 25px 15px 20px 20px">
-=======
 <?php
 
 	require_once("koneksi/koneksi.php");
@@ -10,7 +7,7 @@
 ?>
 
 <div class="col-sm-12" style="margin:15px 25px 15px 20px">
->>>>>>> 273dae4510b4fac9a8c6e204a050dfe619215759
+
 	
 					<h3>UDANG</h3>
 					<hr>

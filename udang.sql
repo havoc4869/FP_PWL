@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2017 at 07:10 PM
+-- Generation Time: Dec 26, 2017 at 09:23 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -122,8 +122,8 @@ CREATE TABLE IF NOT EXISTS `orderpesanan` (
 --
 
 INSERT INTO `orderpesanan` (`kode_produk`, `id_customer`, `jumlah`, `harga_bayar`, `tgl_bayar`, `status`) VALUES
-(1, 5, '3', 150000, '2017-12-26 20:18:45', 'belum'),
-(3, 5, '8', 36000, '2017-12-27 01:01:14', 'belum');
+(1, 5, '3', 150000, '2017-12-26 20:18:45', 'proses'),
+(3, 5, '8', 36000, '2017-12-27 01:01:14', 'proses');
 
 -- --------------------------------------------------------
 

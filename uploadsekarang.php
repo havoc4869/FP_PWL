@@ -1,3 +1,6 @@
+<?php
+include 'koneksi/CekLogin.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +29,7 @@
 
 
 </head>
-<body style="background-color: #e5f3ff;"">
+<body style="background-color: #e5f3ff;">
 	<?php
         include 'SignInUp.php';
         include 'sliderku.php';
@@ -36,37 +39,14 @@
     <div class="container_Utama">
 		<div class="col-sm-12" style="background-color: #CEEAFF;">
 		<div class="checkout">
-			<div class="container">	
-				<div class="col-md-3" ></div>
-				<div class="col-md-6 men-pro-item" >
-					<div class="row">
-						<div class="col-md-6" style="margin-top: 20px;">
-								<H4 style="color: #000">Total Pembayaran</H4>
-						</div>
-						<div class="col-md-6" style="margin-top: 20px; text-align: right;">
-								<H4 style="color: #FDA30E">Rp<?// TOTAL BAYAR DI SINI?></H4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12" style="margin-top: 20px;">
-						<!--	
-						
-							taruh rekening di sini
-						
-						-->
-						</div>
-					</div>
-					<div class="col-md-3" ></div>
-				</div>
-				<div class="col-md-3" ></div>
-			</div>
+			
 			
 			<div class="container">	
 				<div class="col-md-3" ></div>
 				<div class="col-md-6">
 					<p style="margin-top: 12px; margin-bottom: 12px; color: gray;">Upload foto atau screenshot bukti transfer anda</p>
 
-					<form class="form-horizontal" method="post" enctype="multipart/form-data">
+					<form class="form-horizontal" action="SaveFoto.php" method="post" enctype="multipart/form-data">
 					   <input type="hidden" name="id_keranjang" value="<?php //echo isset($total[2])?$total[2]:''; ?>">
 					   <input type="hidden" name="gambar_transfer" value="<?php //echo isset($total[3])?$total[3]:''; ?>">
 						<div class="box-body">
@@ -160,3 +140,4 @@ function myFunction() {
 
 </body>
 </html>
+

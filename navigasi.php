@@ -23,19 +23,47 @@
 
   		<li><a href="index.php?page=tentang">Tentang Kami</a></li>
 
-		<li style="float: right">
-		<div class="col-md-2 header-right">
-				<div class="cart box_1">
-					<a href="checkout.php">
-						<h4> <div class="total">
-							<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style ="color: #FCFCFC"></i>
-							<span style ="color: #FCFCFC"><?//=$hitung;?> Item</div>
+  			<?php
+				if(isset($_COOKIE['nama'])){
+			?>
+			<li style="float: right">
+				<div class="col-md-2 header-right">
+					<div class="cart box_1">
+						<a href="checkout.php">
+							<h4> <div class="total">
+								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style ="color: #FCFCFC"></i>
+								<span style ="color: #FCFCFC"><?//=$hitung;?> Item</div>
 
-						</h4>
-					</a>
-				</div>	
-			</div>
-		</li>
+							</h4>
+						</a>
+					</div>	
+				</div>
+			</li>
+			
+			<?php
+				}
+				else {
+			?>
+			<li style="float: right; cursor: pointer;">
+				<div class="col-md-2 header-right">
+					<div class="cart box_1">
+						<a onclick="alert('Anda Belum Login. Silahkan Login Dulu')">
+							<h4> <div class="total">
+								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style ="color: #FCFCFC"></i>
+								<span style ="color: #FCFCFC"><?//=$hitung;?> Item</div>
+
+							</h4>
+						</a>
+					</div>	
+				</div>
+			</li>
+			<?php
+				}
+			?>
+
+		
+
+
 		<li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">☰</a>
   </li></a>
