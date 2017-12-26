@@ -1,5 +1,6 @@
 <?php
 
+include 'konversi.php';
  //Mendefinisikan Konstanta
 $databasetype = 'mysql';
 $server = 'localhost';

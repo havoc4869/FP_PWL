@@ -13,7 +13,7 @@ require_once ("koneksi/koneksi.php");
         <div class="row">
             
             <div class="col-md-8" style="padding: 20px 40px 10px;">
-                <h4 style="color: white">Butuh Bantuan ? Telepon 7276kali.<br><br>Atau Tulis disini</h4>
+                <h4 style="color: white">Butuh Bantuan ? Hubungi (021) 57853355<br><br>Atau Tulis disini</h4>
                 <hr>
                 <form method="POST">
                     <div class="row">
@@ -46,8 +46,9 @@ require_once ("koneksi/koneksi.php");
 
                 <hr>
                 <p style="color: white">
-                Jalan ringroad utara<br>
-                alamat web menyusul
+                Kec. Rawajitu Timur, Kab. Tulang Bawang<br>
+                Prov. Lampung, 34596<br>
+				INDONESIA
 				</p>
                 <hr>
                 <a href="http://www.facebook.com" target="_blank"><img src="img/logo/fb.png" class="logo"></a>
