@@ -46,14 +46,17 @@
 									{
 								?>
 									<tr class="rem1" >
-										<form method="post" action="koneksi/deleteOrder.php" onSubmit="return validasi()">
 										<td class="invert-closeb">
+										<form method="post" action="koneksi/deleteOrder.php" onSubmit="return validasi()">
+
 											<input type="submit" class="btn" value="Delete" name="delete">
 
 											<input type="hidden" name="kode_produk" value="<?php echo $data1['kode_produk']; ?>">
 											<input type="hidden" name="id_customer" value="<?php echo $_COOKIE['id_customer']; ?>">
 											<input type="hidden" name="harga_bayar" value="<?php echo $data1['harga_bayar']; ?>">
 											<input type="hidden" name="tgl_bayar" value="<?php echo $data1['tgl_bayar']; ?>">
+										</form>
+
 										</td>
 										<td class="invert"> <?php echo $data1['nama_produk']; ?> </td>
 										<td class="invert"> <?php echo $data1['jumlah']; ?></td>
@@ -63,14 +66,13 @@
 										}
 									?>
 
-										</form>
 									</tr>
 
 							</table>
 						</div>
 						<div class="checkout-left">	
 								<div class="description">
-										<a href="orderudang.php">
+										<a href="order.php?page=orderudang">
 										<input type="submit" value ="Kembali Belanja" class = "bton bton2">
 										</a>
 										<a href="beli.php">
